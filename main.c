@@ -4,9 +4,6 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <windows.h>
-#include <windivert.h>
-
-// WinDivert isn't needed, but is here for now...
 
 #define PACKET_SIZE 64
 
