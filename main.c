@@ -57,7 +57,7 @@ int main() {
         // Create an ICMP Echo Request packet
         memset(packet, 0, sizeof(packet));
         char* icmp = packet;
-        icmp[0] = ICMP_ECHO;       // Type
+        icmp[0] = 8;               // Type: ICMP Echo Request
         icmp[1] = 0;               // Code
         icmp[2] = 0;               // Checksum (initially set to 0)
         icmp[3] = 0;               // Identifier (32 bits)
