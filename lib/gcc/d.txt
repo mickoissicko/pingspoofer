@@ -9,3 +9,5 @@ if (!WinDivertSend(handle, packet, packetLen, &sendLen, &addr)) {
             {
                 printf("Failed to send packet (%d)\n", GetLastError());
             }
+
+gcc main.c -o pingspoofer -lws2_32
