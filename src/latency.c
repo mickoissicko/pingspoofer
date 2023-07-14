@@ -11,54 +11,13 @@
 void applyLag(HANDLE handle, UINT lagTime) {
     WINDIVERT_ADDRESS addr;
     UINT packetLen;
-    UINT sendLen;
     BYTE packet[MAXBUF];
 
     while (!kbhit()) {
-        if (WinDivertRecv(handle, packet, sizeof(packet), &addr, &packetLen, &sendLen)) {
+        if (WinDivertRecv(handle, packet, sizeof(packet), &addr, &packetLen)) {
             Sleep(lagTime);
-            if (!WinDivertSend(handle, packet, packetLen, &addr, &sendLen)) {
-                printf("Failed to send packet (%d)\n", GetLastError());
-                continue;
-            }
         }
     }
-}
-
-void packetLagMenu(HANDLE handle) {
-    int choice;
-    UINT lagTime = DEFAULT_LAG;
-
-    printf("Packet Lag Menu\n");
-    printf("1. Apply 100ms Lag\n");
-    printf("2. Apply 200ms Lag\n");
-    printf("3. Apply 300ms Lag\n");
-    printf("4. Custom Lag\n");
-    printf("Enter your choice: ");
-    scanf("%d", &choice);
-
-    switch (choice) {
-        case 1:
-            lagTime = 100;
-            break;
-        case 2:
-            lagTime = 200;
-            break;
-        case 3:
-            lagTime = 300;
-            break;
-        case 4:
-            printf("Enter the custom lag time (in milliseconds): ");
-            scanf("%u", &lagTime);
-            break;
-        default:
-            printf("Invalid choice\n");
-            return;
-    }
-
-    printf("Applying lag...\n");
-    applyLag(handle, lagTime);
-    printf("Lag application finished\n");
 }
 
 int main() {
@@ -68,16 +27,25 @@ int main() {
         return 1;
     }
 
-    int choice;
+    UINT lagTime = DEFAULT_LAG;
+
     printf("Menu:\n");
-    printf("1. Packet Lag\n");
+    printf("1. Apply Lag\n");
     printf("Enter your choice: ");
+    int choice;
     scanf("%d", &choice);
 
     if (choice == 1) {
-        packetLagMenu(handle);
+        printf("Enter lag time in milliseconds (0 - 1000): ");
+        scanf("%u", &lagTime);
+        if (lagTime > 1000) {
+            printf("Invalid lag time. Setting to default (%u ms).\n", DEFAULT_LAG);
+            lagTime = DEFAULT_LAG;
+        }
+        printf("Applying lag of %u ms.\n", lagTime);
+        applyLag(handle, lagTime);
     } else {
-        printf("Invalid choice\n");
+        printf("Invalid choice.\n");
     }
 
     WinDivertClose(handle);
