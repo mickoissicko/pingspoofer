@@ -1,7 +1,7 @@
 # Pingspoofer
-## "I'm a pingspoofer... I'm a pingspoofer..."
+### "I'm a pingspoofer... I'm a pingspoofer..."
 
-### Additional information
+# Additional information
 Pingspoofer Project to gain an advantage in games.
 This will help you gain a fair advantage in games, and is not, and will never be classified as a cheat. It simulates bad WiFi, how is that cheating? Ha...
 There will be two main releases of this Pingspoofer:
@@ -14,11 +14,11 @@ The Fair(all-in-one)Pingspoofer will never be classified as a cheat. It only sim
 
 The Cheat-Orientated Pingspoofer is self-explanatory. It includes rather blatant features that will always be classified as a cheat, like the lag-switch or Blink as some might call it. There will be other features such as force-cancel which cancels the next two packets sent, causing a really broken and unstable internet connection. This will be annoying for opponents to deal with.
 
-### Expected release date
+# Expected release date
 This Pingspoofer is expected to release by the end of July (no promises).
 This Pingspoofer contains every single necessary feature you would ever want in a network-orientated program for getting a fair advantage in games.
 
-### Potentially unfair advantages or cheats
+# Potentially unfair advantages or cheats
 One of the features, a Lagswitch or Blink as you Minecraft players might call it, is usually classified as an unfair advantage and a straight-up cheat. That feature will be included in the COPs version of the Pingspoofer.
 
 
