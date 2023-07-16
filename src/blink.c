@@ -31,7 +31,7 @@ int main() {
     GetConsoleMode(hInput, &prevMode);
     SetConsoleMode(hInput, prevMode & ~ENABLE_PROCESSED_INPUT);
 
-    printf("Clumsy is running. Press Y to stop, T to start.\n");
+    printf("Blink is running. Press Y to stop, T to start.\n");
 
     while (running) {
         // Check if a key is pressed
@@ -39,10 +39,10 @@ int main() {
             char ch = _getch();
             if (ch == 'Y' || ch == 'y') {
                 running = 0;
-                printf("Clumsy stopped.\n");
+                printf("Blink stopped.\n");
             } else if (ch == 'T' || ch == 't') {
                 running = 1;
-                printf("Clumsy resumed.\n");
+                printf("Blink resumed.\n");
             }
         }
 
