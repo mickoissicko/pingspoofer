@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <Winsock2.h>
 #include <conio.h>
-#include <WinDivert.h>
+#include "WinDivert.h"
 
 #define MAXBUF 0xFFFF
 
@@ -26,7 +26,7 @@ int main() {
     printf("Currently packet seizing is off. Press Y to stop, T to start.\n");
 
     while (1) {
-        // Check if 'Y' key is pressed to stop packet seizing
+        // keybind listener
         if (GetAsyncKeyState('Y') & 0x8000) {
             if (running) {
                 running = 0;
@@ -38,7 +38,7 @@ int main() {
             }
         }
 
-        // Check if 'T' key is pressed to start packet seizing
+        // keybind listener
         if (GetAsyncKeyState('T') & 0x8000) {
             if (!running) {
                 running = 1;
@@ -54,7 +54,7 @@ int main() {
         }
 
         if (!running) {
-            Sleep(100); // Small delay when not running to avoid high CPU usage
+            Sleep(10); // delay for keystroke listener
             continue;
         }
 
@@ -63,7 +63,7 @@ int main() {
             continue;
         }
 
-        // Adding delay for keystroke response time
+        // keystroke response time delay
         add_delay((uint8_t*)packet, 5);
 
         if (!WinDivertSend(handle, packet, packet_len, &addr, NULL)) {
@@ -72,7 +72,6 @@ int main() {
         }
     }
 
-    // Restore the original console input mode
     SetConsoleMode(hInput, prevMode);
 
     if (handle != INVALID_HANDLE_VALUE) {
