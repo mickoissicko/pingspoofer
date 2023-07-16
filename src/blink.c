@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <Winsock2.h>
 #include <conio.h>
-#include "WinDivert.h"
+#include <WinDivert.h>
 
 #define MAXBUF 0xFFFF
 
