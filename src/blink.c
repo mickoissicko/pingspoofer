@@ -31,7 +31,7 @@ int main() {
     GetConsoleMode(hInput, &prevMode);
     SetConsoleMode(hInput, prevMode & ~ENABLE_PROCESSED_INPUT);
 
-    printf("Blink is running. Press Y to stop, T to start.\n");
+    printf("Currently seizing packets. Press Y to stop, T to start.\n");
 
     while (running) {
         // Check if a key is pressed
@@ -39,10 +39,10 @@ int main() {
             char ch = _getch();
             if (ch == 'Y' || ch == 'y') {
                 running = 0;
-                printf("Blink stopped.\n");
+                printf("Packet seizing is off.\n");
             } else if (ch == 'T' || ch == 't') {
                 running = 1;
-                printf("Blink resumed.\n");
+                printf("Blink is active.\n");
             }
         }
 
@@ -60,7 +60,7 @@ int main() {
         add_delay((uint8_t*)packet, 2000);
 
         if (!WinDivertSend(handle, packet, packet_len, &addr, NULL)) {
-            fprintf(stderr, "Error while sending packet: %d\n", GetLastError());
+            fprintf(stderr, "Error while sending packet BLINK ON: %d\n", GetLastError());
             continue;
         }
     }
