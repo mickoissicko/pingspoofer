@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdint.h>
 #include <Winsock2.h>
 #include <conio.h>
@@ -12,37 +11,45 @@ void add_delay(uint8_t *packet, uint32_t delay_ms) {
 }
 
 int main() {
-    HANDLE handle;
+    HANDLE handle = INVALID_HANDLE_VALUE;
     char filter[] = "outbound";
     char packet[MAXBUF];
     UINT packet_len;
     WINDIVERT_ADDRESS addr;
-    int running = 1;
-
-    // Initialize WinDivert
-    handle = WinDivertOpen(filter, WINDIVERT_LAYER_NETWORK, 0, 0);
-    if (handle == INVALID_HANDLE_VALUE) {
-        fprintf(stderr, "Error opening WinDivert: %d\n", GetLastError());
-        return 1;
-    }
+    int running = 0;
 
     HANDLE hInput = GetStdHandle(STD_INPUT_HANDLE);
     DWORD prevMode;
     GetConsoleMode(hInput, &prevMode);
     SetConsoleMode(hInput, prevMode & ~ENABLE_PROCESSED_INPUT);
 
-    printf("Currently seizing packets. Press Y to stop, T to start.\n");
+    printf("Currently packet seizing is off. Press Y to stop, T to start.\n");
 
-    while (running) {
-        // Check if a key is pressed
-        if (_kbhit()) {
-            char ch = _getch();
-            if (ch == 'Y' || ch == 'y') {
+    while (1) {
+        // Check if 'Y' key is pressed to stop packet seizing
+        if (GetAsyncKeyState('Y') & 0x8000) {
+            if (running) {
                 running = 0;
                 printf("Packet seizing is off.\n");
-            } else if (ch == 'T' || ch == 't') {
+                if (handle != INVALID_HANDLE_VALUE) {
+                    WinDivertClose(handle);
+                    handle = INVALID_HANDLE_VALUE;
+                }
+            }
+        }
+
+        // Check if 'T' key is pressed to start packet seizing
+        if (GetAsyncKeyState('T') & 0x8000) {
+            if (!running) {
                 running = 1;
                 printf("Blink is active.\n");
+
+                // Initialize WinDivert
+                handle = WinDivertOpen(filter, WINDIVERT_LAYER_NETWORK, 0, 0);
+                if (handle == INVALID_HANDLE_VALUE) {
+                    fprintf(stderr, "Error opening WinDivert: %d\n", GetLastError());
+                    return 1;
+                }
             }
         }
 
@@ -56,8 +63,8 @@ int main() {
             continue;
         }
 
-        // Simulate latency by adding a 2-second delay to the packet
-        add_delay((uint8_t*)packet, 2000);
+        // Adding delay for keystroke response time
+        add_delay((uint8_t*)packet, 5);
 
         if (!WinDivertSend(handle, packet, packet_len, &addr, NULL)) {
             fprintf(stderr, "Error while sending packet BLINK ON: %d\n", GetLastError());
@@ -68,6 +75,9 @@ int main() {
     // Restore the original console input mode
     SetConsoleMode(hInput, prevMode);
 
-    WinDivertClose(handle);
+    if (handle != INVALID_HANDLE_VALUE) {
+        WinDivertClose(handle);
+    }
+
     return 0;
 }
