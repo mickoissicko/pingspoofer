@@ -2,14 +2,13 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <Winsock2.h>
-#include <conio.h> // Include conio.h for _kbhit() and getch()
+#include <conio.h>
 #include "WinDivert.h"
 
 #define MAXBUF 0xFFFF
 
-// Function to add a delay to the packet (simulate latency)
 void add_delay(uint8_t *packet, uint32_t delay_ms) {
-    Sleep(delay_ms); // Sleep for the specified delay time (in milliseconds)
+    Sleep(delay_ms);
 }
 
 int main() {
@@ -27,7 +26,6 @@ int main() {
         return 1;
     }
 
-    // Enable non-blocking console input
     HANDLE hInput = GetStdHandle(STD_INPUT_HANDLE);
     DWORD prevMode;
     GetConsoleMode(hInput, &prevMode);
