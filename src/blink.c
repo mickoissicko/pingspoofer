@@ -2,7 +2,9 @@
 #include <stdint.h>
 #include <Winsock2.h>
 #include <conio.h>
-#include "WinDivert.h"
+#include "J:\git\.mc\pingspoofer\src\libraries\WinDivert.h"
+
+#pragma (comment,lib J:\git\.mc\pingspoofer\src\libraries\WinDivert.lib)
 
 #define MAXBUF 0xFFFF
 
