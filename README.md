@@ -1,13 +1,13 @@
 # Pingspoofer
-### "I'm a pingspoofer... I'm a pingspoofer..."
+"I'm a pingspoofer... I'm a pingspoofer..."
 
 
-# General information
+## General information
 A Pingspoofer is a tool that adds latency/packet lag to your internet connection, simulating bad WiFi conditions. This might seem like a disadvantage, but with the right settings, you will rock everyone.
 
 A Pingspoofer simulates bad WiFi, therefore, it will never be classified as a cheat. However, features that abuse internet like the lag-switch or Blink are cheats.
 
-# Additional information
+## Additional information
 Pingspoofer Project to gain an advantage in games.
 This will help you gain a fair advantage in games, and is not, and will never be classified as a cheat. It simulates bad WiFi, how is that cheating? Ha...
 There will be two main releases of this Pingspoofer:
