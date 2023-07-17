@@ -14,7 +14,9 @@ There will be two main releases of this Pingspoofer:
 
 # Important information
 > Blink/Lagswitch is a type of cheat used to seize network packets so you can find where your opponents are, or position yourself behind them or next to them for an easy kill. It will look like you just teleported on their screen.
+
 > Please note that using the Blink/Lagswitch module of the Pingspoofer is going to get you banned on most games, although it is undetectable by anticheats. If you get reported enough, a system like Hypixel Atlas or Overwatch will get you banned through user submitted reports. If you want to stay undetected with this in games like Valorant, CS:GO or Minecraft, be mindful.
+
 > If the anticheat can't ban you, then game staff definetly can. 
 
 # Expected release date
