@@ -20,11 +20,3 @@ There will be two main releases of this Pingspoofer:
 > If the anticheat can't ban you, then game staff definetly can. 
 ## Known issues
 > There is a 80-400ms delay when you activate Blink. After pressing T, it takes about 80-350ms to activate Blink. This issue will not be fixed until further notice.
-
-
-# Expected release date
-This Pingspoofer is expected to release by the end of July (no promises).
-This Pingspoofer contains every single necessary feature you would ever want in a network-orientated program for getting a fair advantage in games.
-
-# Potentially unfair advantages or cheats
-One of the features, a Lagswitch or Blink as you Minecraft players might call it, is usually classified as an unfair advantage and a straight-up cheat. That feature will be included in the COPs version of the Pingspoofer.
