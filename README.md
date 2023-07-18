@@ -3,7 +3,7 @@ A [Pingspoofing](https://mickoissicko.github.io/project/pingspoofer) tool to gai
 ![](https://i.ibb.co/pyfYFjk/New-Project.png)
 
 ## pingspoofer
-Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer allows you to tamper with network packets before sending them to the network interface. i.e introducing lag, cancelling packet transmission, dropping packets, etc.
+Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer will help you gain a significant advantage in online games by lagging the network interface or delaying outbound packets sent to the network interface, causing high ping and lag. It also has a module like Blink/Lagswitch which cancells all outbound packets and does not send them to the network interface, so you can reposition yourself or find where your enemies are. Then you can resume packet flow and shoot the enemy or preaim at their location. In Minecraft, you can use this to reposition yourself behind the enemy and hit them without them expecting it.
 
 ### Features
 - Easiest way to gain an advantage in online games without technically fully cheating and having the risk of being banned early on.
