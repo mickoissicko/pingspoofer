@@ -3,8 +3,7 @@ A [Pingspoofing](https://mickoissicko.github.io/project/pingspoofer) tool to gai
 ![](https://i.ibb.co/pyfYFjk/New-Project.png)
 
 ## pingspoofer
-Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer helps you gain a significant advantage in online games by dropping, lagging, delaying, and seizing or cancelling outbound packets in a controllable way. It delays, lags and drops packets before sending them to your network interface. Ridiculously high ping, in a controlled way, is an advantage and causes you to appear as if you teleport once in a while, and enemies usually don't expect this.
-Cancelling/seizing outbound packets is also known as Blinking/Lagswitching and will help you find the location of your enemy so you can preaim without them expecting it or reposition yourself.
+Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer introduces artificial delays or disruptions in outbound packet flow, so ping appears higher than it actually is. Other players in the game will see the Pingspoofer appearing to teleport. This can make the Pingspoofer's movements unpredictable, making it harder for opponents to track and hit them effectively.
 
 ### Features
 - Easiest way to gain an advantage in online games without technically fully cheating and having the risk of being banned early on.
