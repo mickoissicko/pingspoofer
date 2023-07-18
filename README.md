@@ -1,18 +1,17 @@
-## pingspoofer
-
 ![](https://i.ibb.co/pyfYFjk/New-Project.png)
 
 A **[Pingspoofing](https://mickoissicko.github.io/project/pingspoofer)** tool to gain an advantage in games.
 
+## pingspoofer
+Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer allows you to tamper with network packets before sending them to the network interface. i.e introducing lag, cancelling packet transmission, dropping packets, etc.
+
 ### Features
 - Easiest way to gain an advantage in online games without technically fully cheating and having the risk of being banned early on.
 - Supports most Windows machines
-- Low performance requirements
 - Low memory and CPU usage
-- Open source
 - Undetectable by game anticheats & Minecraft screenshare tools
-- Easy to hide
 - Includes blatant features like Blink/Lagswitch
+- Universal Pingspoofing - it works on every single (online) game
 
 ### Usage
 - To introduce artificial lag to your network interface, simulating high ping in online games
