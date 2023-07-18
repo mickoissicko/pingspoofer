@@ -9,3 +9,7 @@
 - Supports most Windows machines
 - Low performance requirements
 - Low memory and CPU usage
+- Open source
+- Undetectable by game anticheats & Minecraft screenshare tools
+- Easy to hide
+- Includes blatant features like Blink/Lagswitch
