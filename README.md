@@ -13,3 +13,8 @@ A **[Pingspoofing](https://mickoissicko.github.io/project/pingspoofer)** tool to
 - Undetectable by game anticheats & Minecraft screenshare tools
 - Easy to hide
 - Includes blatant features like Blink/Lagswitch
+
+### Usage
+- To introduce artificial lag to your network interface, simulating high ping in online games
+- Seizing packets to reposition yourself or find the locations of your opponents or to teleport
+- Using irregular and inconsistent WiFi or introducing artificial internet drops to become significantly harder to hit in games
