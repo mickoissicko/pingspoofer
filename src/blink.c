@@ -56,7 +56,7 @@ int main() {
         }
 
         if (!running) {
-            Sleep(10); // delay for keystroke listener
+            Sleep(5); // delay for keystroke listener
             continue;
         }
 
