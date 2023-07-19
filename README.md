@@ -17,3 +17,6 @@ Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoof
 - To introduce artificial lag to your network interface, simulating high ping in online games
 - Seizing packets to reposition yourself or find the locations of your opponents or to teleport
 - Using irregular and inconsistent WiFi or introducing artificial internet drops to become significantly harder to hit in games
+
+### Known issues
+- There is (sometimes) an 80-200ms delay when toggling on/off Blink.
