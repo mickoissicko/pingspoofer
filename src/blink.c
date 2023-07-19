@@ -46,7 +46,7 @@ int main() {
                 running = 1;
                 printf("Blink is active.\n");
 
-                // initialise wd
+                // Initialize WinDivert
                 handle = WinDivertOpen(filter, WINDIVERT_LAYER_NETWORK, 0, 0);
                 if (handle == INVALID_HANDLE_VALUE) {
                     fprintf(stderr, "Error opening WinDivert: %d\n", GetLastError());
