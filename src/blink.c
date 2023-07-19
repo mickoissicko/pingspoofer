@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "J:\git\.mc\pingspoofer\src\libraries\WinDivert.h"
 
-#pragma (comment,lib J:\git\.mc\pingspoofer\src\libraries\WinDivert.lib)
+#pragma comment(lib, "J:\\git\\.mc\\pingspoofer\\src\\libraries\\WinDivert.lib")
 
 #define MAXBUF 0xFFFF
 
@@ -46,7 +46,7 @@ int main() {
                 running = 1;
                 printf("Blink is active.\n");
 
-                // Initialize WinDivert
+                // initialise wd
                 handle = WinDivertOpen(filter, WINDIVERT_LAYER_NETWORK, 0, 0);
                 if (handle == INVALID_HANDLE_VALUE) {
                     fprintf(stderr, "Error opening WinDivert: %d\n", GetLastError());
