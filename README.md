@@ -3,7 +3,7 @@ A [Pingspoofing](https://mickoissicko.github.io/project/pingspoofer) tool to gai
 ![](https://i.ibb.co/pyfYFjk/New-Project.png)
 
 ## pingspoofer
-Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer introduces artificial delays or disruptions in outbound packet flow, so ping appears higher than it actually is. Other players in the game will see the Pingspoofer appearing to teleport. This can make the Pingspoofer's movements unpredictable, making it harder for opponents to track and hit them effectively.
+Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer introduces [artifical delays](https://mickoissicko.github.io/project/pingspoofer/delay) or disruptions in [outbound](https://www.techtarget.com/searchsecurity/answer/Comparing-firewalls-Differences-between-an-inbound-outbound-firewall) packet flow, so [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility)) appears higher than it actually is. Other players in the game will see the Pingspoofer appearing to teleport. This can make the Pingspoofer's movements unpredictable, making it harder for opponents to track and hit them effectively.
 
 ### Features
 - Easiest way to gain an advantage in online games without technically fully cheating and having the risk of being banned early on.
