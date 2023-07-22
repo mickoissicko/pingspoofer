@@ -28,6 +28,7 @@ If you are only, and only using Blink/Lagswitch without any other cheat that mig
 - Take all the files inside the folder, and place them in C:\Windows\System32\drivers\etc or C:\Windows\System32\drivers.
 - Rename moduleBlink.exe to something legitimate rblxfpsunlocker.exe.
 - When you are ready, delete your search history regarding any Minecraft cheat.
+- Make sure to clear your download history too.
 - Launch the executable as administrator as soon as you start your PC.
 - Launch Minecraft after 5-10 minutes following launching Blink/Lagswitch.
 - When/if you get frozen, just don't worry about it. Keep it cool, and sit back and relax.
