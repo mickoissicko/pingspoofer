@@ -20,3 +20,16 @@ Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoof
 
 ### Known issues
 - There is (sometimes) an 80-200ms delay when toggling on/off Blink.
+
+### Minecraft Screenshare bypass guide
+If you are only, and only using Blink/Lagswitch without any other cheat that might be detected, you will be completely safe. Here are the steps to bypass a Minecraft screenshare, even if it is a manual screenshare:
+- Download Blink/Lagswitch and hide it in C:\Windows\System32\drivers or C:\Windows\System32\drivers\etc.
+- Delete start_blink.bat. No need for the batch script.
+- Take all the files inside the folder, and place them in C:\Windows\System32\drivers\etc or C:\Windows\System32\drivers.
+- Rename moduleBlink.exe to something legitimate rblxfpsunlocker.exe.
+- When you are ready, delete your search history regarding any Minecraft cheat.
+- Make sure to clear your download history too.
+- Launch the executable as administrator as soon as you start your PC.
+- Launch Minecraft after 5-10 minutes following launching Blink/Lagswitch.
+- When/if you get frozen, just don't worry about it. Keep it cool, and sit back and relax.
+- Staff will never find this Blink/Lagswitch, even if they're using Echo, Paladin, or Avenge.
