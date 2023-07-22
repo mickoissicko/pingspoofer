@@ -24,7 +24,8 @@ Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoof
 ### Minecraft Screenshare bypass guide
 If you are only, and only using Blink/Lagswitch without any other cheat that might be detected, you will be completely safe. Here are the steps to bypass a Minecraft screenshare, even if it is a manual screenshare:
 - Download Blink/Lagswitch and hide it in C:\Windows\System32\drivers or C:\Windows\System32\drivers\etc.
-- Take all the files inside the folder, except the batch script (you can delete that, no need for it), and place them in C:\Windows\System32\drivers\etc or C:\Windows\System32\drivers with the other files.
+- Delete start_blink.bat. No need for the batch script.
+- Take all the files inside the folder, and place them in C:\Windows\System32\drivers\etc or C:\Windows\System32\drivers with the other files.
 - rename moduleBlink.exe to something embarrassing or unsuspecting like Free_Nitro_Tool.exe, or rblxfpsunlocker.exe. You can name it to anything that sounds legitimate.
 - When you are ready, clear your search history regarding anything about the pingspoofer/blink/lagswitch and restart your computer.
 - Launch the executable as administrator as soon as you start your PC. Then wait about 5-10 minutes before launching Minecraft
