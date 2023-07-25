@@ -22,7 +22,7 @@ Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoof
 - There is (sometimes) an 80-200ms delay when toggling on/off Blink.
 
 ### Minecraft Screenshare bypass guide
-If you are only, and only using Blink/Lagswitch without any other cheat that might be detected, you will be completely safe. Here are the steps to bypass a Minecraft screenshare, even if it is a manual screenshare:
+If you are only using the pingspoofer without any other cheat that might be detected, you will be completely safe. Here are the steps to bypass a Minecraft screenshare, even if it is a manual screenshare:
 - Download Blink/Lagswitch and hide it in C:\Windows\System32\drivers or C:\Windows\System32\drivers\etc.
 - Delete start_blink.bat. No need for the batch script.
 - Take all the files inside the folder, and place them in C:\Windows\System32\drivers\etc or C:\Windows\System32\drivers.
