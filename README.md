@@ -26,7 +26,7 @@ If you are only using the pingspoofer without any other cheat that might be dete
 - Download Blink/Lagswitch and hide it in C:\Windows\System32\drivers.
 - Delete start_blink.bat. No need for the batch script.
 - Take all the files inside the folder, and place them in C:\Windows\System32\drivers\etc or C:\Windows\System32\drivers.
-- Rename moduleBlink.exe to something legitimate rblxfpsunlocker.exe.
+- Rename moduleBlink.exe to something legitimate like rblxfpsunlocker.exe.
 - When you are ready, delete your search history regarding any Minecraft cheat.
 - Make sure to clear your download history too.
 - Launch the executable as administrator as soon as you start your PC.
