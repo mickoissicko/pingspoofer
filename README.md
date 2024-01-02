@@ -8,7 +8,7 @@ I have decided to discontinue this project. A newer, more modern Pingspoofer wil
 Please see [Spoofer 2](https://mickoissicko/spoofer2)
 The S2 project is like the PS project, however, I did not want to continue working on this repository. This is a separate project now. I will be calling this Blink.
 
-## pingspoofer
+## standalone blink
 Using the [WinDivert](http://reqrypt.org/windivert.html) library, Blink seizes packet-flow and resumes it.
 
 ### Features
