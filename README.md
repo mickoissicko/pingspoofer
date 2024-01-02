@@ -1,6 +1,6 @@
 A [Pingspoofing](https://mickoissicko.github.io/project/pingspoofer) tool to gain an advantage in games.
 
-![](https://i.ibb.co/fHRjDRt/psdc2.png)
+![](https://i.ibb.co/V3f8Wpc/psdc3.png)
 
 # DISCONTINUED
 > This project is no longer in development
