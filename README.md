@@ -1,4 +1,4 @@
-A [Pingspoofing](https://mickoissicko.github.io/project/pingspoofer) tool to gain an advantage in games.
+A [Blink](https://www.youtube.com/watch?v=wdsocnOOqrQ) tool to gain an advantage in games.
 
 ![](https://i.ibb.co/V3f8Wpc/psdc3.png)
 
