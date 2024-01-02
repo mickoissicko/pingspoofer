@@ -1,22 +1,25 @@
 A [Pingspoofing](https://mickoissicko.github.io/project/pingspoofer) tool to gain an advantage in games.
 
-![](https://i.ibb.co/pyfYFjk/New-Project.png)
+![](https://i.ibb.co/RpTrW0F/psdc.png](https://i.ibb.co/fHRjDRt/psdc2.png)
+
+# DISCONTINUED
+> This project is no longer in development
+I have decided to discontinue this project. A newer, more modern Pingspoofer will be worked on, leaving this one to collect dust.
+Please see [Spoofer 2](https://mickoissicko/spoofer2)
+The S2 project is like the PS project, however, I did not want to continue working on this repository. This is a separate project now. I will be calling this Blink.
 
 ## pingspoofer
-Using the [WinDivert](http://reqrypt.org/windivert.html) library, this Pingspoofer introduces [artifical delays](https://mickoissicko.github.io/project/pingspoofer/delay) or disruptions in [outbound](https://www.techtarget.com/searchsecurity/answer/Comparing-firewalls-Differences-between-an-inbound-outbound-firewall) packet flow, so [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility)) appears higher than it actually is. Other players in the game will see you teleport. This can make your movements unpredictable, making it harder for opponents to track and hit you effectively.
+Using the [WinDivert](http://reqrypt.org/windivert.html) library, Blink seizes packet-flow and resumes it.
 
 ### Features
 - Easiest way to gain an advantage in online games without technically fully cheating and having the risk of being banned early on.
 - Supports most Windows machines
 - Low memory and CPU usage
 - Undetectable by game anticheats & Minecraft screenshare tools
-- Includes blatant features like Blink/Lagswitch
 - Universal Pingspoofing - it works on every single (online) game
 
 ### Usage
-- To introduce artificial lag to your network interface, simulating high ping in online games
-- Seizing packets to reposition yourself or find the locations of your opponents or to teleport
-- Using irregular and inconsistent WiFi or introducing artificial internet drops to become significantly harder to hit in games
+- Blink cheat
 
 ### Known issues
 - There is (sometimes) an 80-200ms delay when toggling on/off Blink.
